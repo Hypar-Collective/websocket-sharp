@@ -133,6 +133,18 @@ namespace WebSocketSharp
     }
 
     /// <summary>
+    /// Gets a value indicating whether the message type is pong.
+    /// </summary>
+    /// <value>
+    /// <c>true</c> if the message type is pong; otherwise, <c>false</c>.
+    /// </value>
+    public bool IsPong {
+      get { 
+        return _opcode == Opcode.Pong;
+      }
+    }
+
+    /// <summary>
     /// Gets a value indicating whether the message type is text.
     /// </summary>
     /// <value>
